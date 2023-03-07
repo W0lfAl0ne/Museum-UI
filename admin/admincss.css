@@ -1,0 +1,92 @@
+.content {
+    color: rgb(26, 24, 24);
+    background-color: rgb(196, 189, 189);
+    height: 100vh;
+}
+
+h2,
+h4 {
+    margin: 10px 0;
+    text-align: center;
+    color: rgb(44, 40, 40);
+}
+input {
+    margin: 1px;
+    width: 250px;
+    margin-right: 5px;
+    float: right;
+}
+label {
+    margin: 5px;
+    float: left;
+    clear: both;
+}
+table, td, th {  
+    border: 0;
+    text-align: left;
+}
+  
+table {
+    border-collapse: collapse;
+    
+}
+  
+th, td {
+    max-width: 300px;
+    overflow: hidden;
+    padding: 5px;
+}
+tr {
+    width: 100%;
+}
+
+tbody tr:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.khung{
+    text-align:left;
+    width: 100%;
+    overflow: auto;
+    border: 5px solid black;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    margin-top: 3px;
+}
+
+.hkitem {
+    display: block;
+    height: 558px;
+}
+
+.crItem {
+    float: left;
+    text-align:left;
+    padding: 5px;
+    width: 50%;
+    background-color: rgb(228, 228, 228);
+    padding-left: 10px;
+    padding-bottom: 3px;
+    margin-left: 10px;
+}
+
+#lItem{
+    float: right;
+    text-align:left;
+    padding: 5px;
+    width: 40%;
+    height: 470px;
+    overflow: auto;
+    background-color: rgb(228, 228, 228);
+    padding-left: 3px;
+    padding-bottom: 3px;
+    margin-right: 10px;
+    
+}
+
+.ctheme {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

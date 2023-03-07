@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="admincss.css">
+    <script src="adminjs.js"></script>
+    <title>Admin</title>
+</head>
+
+<body>
+    <div class="container-fluid content">
+        <h2>Tạo Một Nội Dung Cho Web của bạn</h2>
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="khung">
+                    <h4>Thêm header</h4>
+                    <label for="title">Tiêu Đề:</label>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="Timg">Ảnh:</label>
+                    <input type="text" id="Timg" name="Timg"><br>
+                    <label for="desc">Mô Tả:</label>
+                    <textarea id="desc" name="desc" rows="4" cols="43"></textarea><br>
+                </div>
+
+                <div class="khung">
+                    <h4>Tạo Item</h4>
+                    <label for="itemname">Tên:</label>
+                    <input type="text" id="itemname" name="itemname"><br>
+                    <label for="itemimg">Ảnh:</label>
+                    <input type="text" id="itemimg" name="itemimg"><br>
+                    <label for="iaudio">Âm Thanh:</label>
+                    <input type="text" id="iaudio" name="iaudio"><br>
+                    <label for="idesc">Nội Dung:</label>
+                    <textarea id="idesc" name="idesc" rows="4" cols="43"></textarea><br>
+                    <button onclick="creatItem()">Tạo Item</button>
+                    <button onclick="deleteItem()">Xóa Item</button>
+                    <button onclick="editItem()">Sửa Item</button>
+                    <button onclick="clearitem()">Làm Trống</button>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="khung hkitem">
+                    <h4>Items</h4>
+                    <table>
+                        <thead>
+                            <th>ID</th>
+                            <th>Tên</th>
+                        </thead>
+                        <tbody id="items">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="khung hkitem">
+                    <h4>Nội dung chi tiết Item</h4>
+                    <b>Item ID: <span id="idItem"></span></b> <br>
+                    <div class="crItem">
+                        <label for="Ititle">Tiêu Đề:</label>
+                        <input type="text" id="Ititle" name="Ititle"><br>
+                        <label for="Iimg">Ảnh:</label>
+                        <input type="text" id="Iimg" name="Iimg"><br>
+                        <label for="descimg">Mô Tả Ảnh:</label>
+                        <input type="text" id="descimg" name="descimg"><br>
+                        <label for="contentimg">Nội Dung:</label>
+                        <textarea id="contentimg" name="contentimg" rows="4" cols="44"></textarea><br>
+                        <button onclick="creatItemimg()">Tạo</button>
+                        <button onclick="deleteItemimg()">Xóa</button>
+                        <button onclick="editItemimg()">Sửa</button>
+                        <button onclick="clearitemp()">Làm Trống</button>
+                    </div>
+
+                    <div id="lItem">
+                        <table>
+                            <thead>
+                                <th>ID</th>
+                                <th>Tên</th>
+                            </thead>
+                            <tbody id="lItemct">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <button class="ctheme" onclick="ctheme()" href="">Tạo Chủ Đề</button>
+
+    </div>
+</body>
+
+</html>

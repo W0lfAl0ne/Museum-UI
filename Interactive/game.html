@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interactive</title>
+        <link rel="stylesheet" href="game.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class = "start_btn"><button>Bắt đầu</button></div>
+        <div class = "info_box">
+            <div class = "info_title">
+                <span style = "font-size: 18px;">Một số lưu ý trước khi tham gia Quiz</span>
+            </div>
+            <div class = "info_list">
+                <div class = "info">1. Sẽ một bức ảnh gồm <span>6 phần</span>, mỗi phần ứng với một câu hỏi, thời gian trả lời là <span>15 giây </span>cho mỗi câu hỏi</span></div>
+                <div class = "info">2. Mỗi câu hỏi bạn chỉ có duy nhất một lần lựa chọn và không thể thay đổi</div>
+                <div class = "info">3. Hình ảnh sẽ gợi ý về một nét đẹp văn hóa và bạn cần đi tìm nét đẹp đó</div>
+                <div class = "info">4. Với mỗi câu trả lời đúng, bạn sẽ mở được góc ảnh gợi ý tương ứng</div>
+                <div class = "info">5. Mỗi câu trả lời đúng sẽ tương ứng với một mức điểm nhất định</div>
+            </div>
+            <div class = "buttons">
+                <button class = "quit">Thoát</button>
+                <button class = "continue">Tiếp tục</button>
+            </div>
+        </div>
+
+        <div class = "img_box">
+            <div class = "img_title"><span>ẢNH GỢI Ý</span></div>
+            <div class = "img">
+                <div class = "block" onclick="showQuestions(0)">
+                    <span>1</span>
+                </div>
+                <div class = "block" style = "margin-left: 26.67%;" onclick = "showQuestions(1)">
+                    <span>2</span>
+                </div>
+                <div class = "block" style = "margin-left: 53.33%;" onclick = "showQuestions(2)">
+                    <span>3</span>
+                </div>
+                <div class = "block" style = "margin-top: 200px;" onclick = "showQuestions(3)">
+                    <span>4</span>
+                </div>
+                <div class = "block" style = "margin-top: 200px; margin-left: 26.67%;" onclick = "showQuestions(4)">
+                    <span>5</span>
+                </div>
+                <div class = "block" style = "margin-top: 200px; margin-left: 53.33%;" onclick = "showQuestions(5)">
+                    <span>6</span>
+                </div>
+            </div>
+            <div class = "answer">
+                <input type = "text" id = "answerImg" placeholder="Nhập đáp án của hình ảnh tại đây">
+                <button class = "ans_button">Xác nhận</button>
+            </div>
+        </div>
+
+        <div class = "quiz_box">
+            <header>
+                <div class = "title">TRẮC NGHIỆM VỀ CÁC VÙNG VĂN HÓA</div>
+                <div class="timer">
+                    <div class = "time_text">Thời gian còn lại</div>
+                    <div class = "timer_sec">15</div>
+                </div>
+            </header>
+            <section>
+                <div class = "que_text">
+                </div>
+                <div class="option_list">
+                </div>
+            </section>
+            <footer>
+                <div class="total_que">
+                </div>
+                <button class="next_btn">Xem ảnh</button>
+            </footer>
+        </div>
+
+        <div class = "result_box">
+            <div class="complete_text"></div>
+            <div class="score_text">
+            </div>
+            <div class = "buttons">
+                <button class = "restart">Chơi lại</button>
+                <button class = "quit">Thoát</button>
+            </div>
+        </div>
+
+        <script src="game.js"></script>
+        <script src="question.js"></script>
+    </body>
+</html>
+
+
